@@ -115,12 +115,15 @@ p {
 }
 
 .message-petit-ecran {
-  display: none;
+  visibility: hidden;
   text-align: center;
   color: #ffb400;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   margin-top: 10px;
-}    
+  padding: 6px;
+  height: 0; /* optionnel : réduit l'espace visuel */
+  overflow: hidden;
+}  
 
 /* --- 📱 Petits téléphones (moins de 400px) --- */
 @media (max-width: 400px) {
@@ -139,8 +142,9 @@ p {
     font-size: 30px;
   }
 
-   .message-petit-ecran {
-    display: block;
+  .message-petit-ecran {
+    visibility: visible;
+    height: auto; /* si tu avais mis height:0 */
   }
   
 }
@@ -316,4 +320,5 @@ p {
   </script>
 </body>
 </html>
+
 
