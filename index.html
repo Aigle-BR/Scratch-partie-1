@@ -114,6 +114,14 @@ p {
   transform: scale(1.3);
 }
 
+.message-petit-ecran {
+  display: none;
+  text-align: center;
+  color: #ffb400;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}    
+
 /* --- 📱 Petits téléphones (moins de 400px) --- */
 @media (max-width: 400px) {
   h1 {
@@ -130,6 +138,11 @@ p {
     padding: 10px 14px;
     font-size: 30px;
   }
+
+   .message-petit-ecran {
+    display: block;
+  }
+  
 }
 
 /* --- 📱 Tous les téléphones (jusqu’à 600px) --- */
@@ -183,7 +196,7 @@ p {
   <div class="dots"></div>
 
   <p>Si le site ne se présente pas bien sur téléphone en mode portrait, essayer de le mettre en mode paysage</p>
-  <p>Désolé pour le style (qui n'est pas très bien fait)</p>
+  <p class="message-petit-ecran">Désolé pour le style (qui n'est pas très bien fait)</p>
 
   <script>
     const slides = document.querySelector('.slides');
@@ -303,3 +316,4 @@ p {
   </script>
 </body>
 </html>
+
