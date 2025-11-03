@@ -21,7 +21,11 @@ body {
   gap: 10px;
   box-sizing: border-box;
   overflow-x: hidden;
-  user-select: none;
+}
+
+body::selection {
+    background-color: red;  /* couleur du fond de la sélection */
+    color: white;  /* couleur du texte sélectionné */
 }
 
 h1 {
@@ -328,6 +332,7 @@ p {
   </script>
 </body>
 </html>
+
 
 
 
