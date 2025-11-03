@@ -7,6 +7,11 @@
   <title>Exercices sur Scratch - Maths</title>
 
   <style>
+* {
+  -webkit-tap-highlight-color: transparent; /* supprime le flash bleu/gris sur mobile */
+  -webkit-user-drag: none; /* empêche le drag d'images sur iOS/Safari */
+}
+    
 body {
   display: flex;
   flex-direction: column;
@@ -56,7 +61,6 @@ p {
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   background: #000;
-  user-select: none;
 }
 
 .slides {
@@ -72,6 +76,13 @@ p {
   object-fit: contain;
   background-color: #555;
   flex-shrink: 0;
+}
+
+img {
+  user-drag: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
 }
 
 .btn {
@@ -329,6 +340,7 @@ p {
   </script>
 </body>
 </html>
+
 
 
 
